@@ -234,9 +234,8 @@ const styles = {
     color: '#333',
     minHeight: '100vh',
   },
-  header: {
+    header: {
     textAlign: 'center',
-    color: '#2c3e50',
     marginBottom: '30px',
     fontSize: '2.5rem',
     fontWeight: '600',
