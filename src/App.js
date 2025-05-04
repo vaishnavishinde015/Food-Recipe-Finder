@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import Mainpage from './Component/Mainpage';
+import MealInfo from './Component/Mealinfo';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="/" element={<Mainpage />} />
+        <Route path="/meal/:id" element={<MealInfo />} /> {/* Updated to match the imported component name */}
+      </Routes>
     </div>
   );
 }
